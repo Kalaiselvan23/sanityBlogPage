@@ -18,6 +18,12 @@ export default defineType({
         source: 'title',
         maxLength: 96,
       },
+    }), 
+    defineField({
+      name:'description',
+      title:"Description",
+      description:"Dont go more than 20 characters..",
+      type:"string",
     }),
     defineField({
       name: 'author',
