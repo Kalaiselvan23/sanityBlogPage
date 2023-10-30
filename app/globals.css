@@ -31,3 +31,7 @@
     @apply text-6xl my-2
   }
 }
+.form-inputs
+{
+  @apply h-10 rounded-sm focus:outline-none p-2 w-full 
+}

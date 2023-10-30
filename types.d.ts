@@ -1,8 +1,6 @@
 export type Post = {
   _createdAt: string;
   _id: string;
-  _rev: string;
-  _type: string;
   _updatedAt: string;
   author: {
     _ref: string;
@@ -33,9 +31,22 @@ export type Post = {
     };
   };
   publishedAt: string;
-  slug: {
-    _type: string;
-    current: string;
-  };
+  description:string;
   title: string;
+  comments:Comment[]
 };
+export type Comment={
+  _id:string,
+  _createdAt:string,
+  _rev:string,
+  type:string,
+  _updatedAt:string,
+  approved:boolean,
+  comment:string,
+  email:string,
+  name:string,
+  post:{
+    _ref:string,
+    type:string,
+  }
+}
