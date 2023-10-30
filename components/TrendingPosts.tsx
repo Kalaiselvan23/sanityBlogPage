@@ -19,13 +19,11 @@ export const getPosts = async (): Promise<Post[]> => {
   }
 }
 const TrendingPosts = async () => {
-  console.log("Trending posts");
   const posts = await getPosts();
   return (
     <div className="px-20 max-md:px-12 max-sm:px-auto my-4">
       <div className="flex justify-between max-sm:flex-col">
-      <h4 className="font-semibold text-3xl my-3">Trending Posts</h4>
-      <Link href={"/post"} className="btn bg-orange-500 text-white hover:bg-orange-400">View all</Link>
+      <h4 className="font-semibold text-3xl my-3 mx-5 max-sm:text-center">Trending Posts</h4>
       </div>
     <div className="grid p-5 grid-cols-4 gap-4 max-sm:grid-cols-1 max-md:grid-cols-2 max-lg:grid-cols-3">
       {posts.slice(0,5).map(post => (
