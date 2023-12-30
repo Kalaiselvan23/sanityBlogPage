@@ -8,3 +8,4 @@ import author from './schemas/author'
 export const schema: { types: SchemaTypeDefinition[] } = {
   types: [post, author, category, blockContent],
 }
+  

@@ -4,7 +4,6 @@ import Image from 'next/image';
 
 type props={
     post:Post,
-    
 }
 const PostCard = ({ post}: props) => {
     const dateObj = new Date(post._updatedAt);
